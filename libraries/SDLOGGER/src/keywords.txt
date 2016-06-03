@@ -1,0 +1,3 @@
+SDLOGGER         KEYWORD1
+DataToSD         KEYWORD2
+DateTimeToSD     KEYWORD2
