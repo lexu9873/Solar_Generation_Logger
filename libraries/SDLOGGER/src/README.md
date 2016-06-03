@@ -1,1 +1,1 @@
-This library is to log real-time data and working status to SD card.
+This library is to log real-time power and working status of solar panel to SD card.
