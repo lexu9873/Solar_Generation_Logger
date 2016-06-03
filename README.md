@@ -73,6 +73,7 @@ Figure 2 Full Schematics of Solar Generation Logger
 Figure 3 Prototype of Solar Generation Logger
 
 Based on the hardware prototype in Fig.3, the demonstration video can be referenced to this YOUTUBE link: https://www.youtube.com/watch?v=zB6wNe_9MjM.
+[![ScreenShot](https://cloud.githubusercontent.com/assets/19504324/15778987/022dc8fa-29dd-11e6-9076-ac1d5c0bea92.png)](https://www.youtube.com/watch?v=zB6wNe_9MjM)
 
 ###Appendix D Control Algorithm (Flowchart)
 
