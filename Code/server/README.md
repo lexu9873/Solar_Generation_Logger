@@ -1,0 +1,1 @@
+This file includes a javascript file, named server.js, to transmit data from Serial Port on Arduino to plotly dashboard via mac terminal operation. The idea of this part is from a tutorial of IoT (Internet of Things):http://adilmoujahid.com/posts/2015/07/practical-introduction-iot-arduino-nodejs-plotly/
