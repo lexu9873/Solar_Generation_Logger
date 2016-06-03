@@ -38,9 +38,6 @@ During the implementation, there are some problems encountered but solved by spe
 
 To summarize, the system design can not only realize the basic function of logging solar power generation onto different devices, including SD card, LCD, Android phone (via Bluetooth), but an interrupt-driven LCD display and light sensor for warning checking are also featured. Furthermore, the mac is used as the server side to transmit real-time data stream from Serial Port to Plot.ly dashboard via a JavaScript written server.
 
-
-
-
 ###Reference
 
 Library <rtc_clock.h>:     https://github.com/MarkusLange/Arduino-Due-RTC-Library (No license found in this library folder, but it should be copyleft or permissive use.)
@@ -59,33 +56,29 @@ IoT (Internet of Things) tutorial for node.js server: http://adilmoujahid.com/po
 
 ###Appendix A High Level Schematics of Hardware Design
 
-
+![alt tag](https://cloud.githubusercontent.com/assets/19504324/15778726/51e1bf16-29db-11e6-9511-540d4ad64f82.png)
 
 Figure 1 High Level Schematics of Solar Generation Logger
+
 ###Appendix B Full Schematics of Hardware Design
 
+![alt tag](https://cloud.githubusercontent.com/assets/19504324/15778724/51dd1d76-29db-11e6-92c3-8f4ce0a5ff3d.png)
+
 Figure 2 Full Schematics of Solar Generation Logger
+
 ###Appendix C Prototype Demonstration
 
-
+![alt tag](https://cloud.githubusercontent.com/assets/19504324/15778725/51e0a838-29db-11e6-8b7d-30c50703570c.png)
 
 Figure 3 Prototype of Solar Generation Logger
 
 Based on the hardware prototype in Fig.3, the demonstration video can be referenced to this YOUTUBE link: https://www.youtube.com/watch?v=zB6wNe_9MjM.
 
-
-
-
-
-
-
-
-
 ###Appendix D Control Algorithm (Flowchart)
 
+![alt tag](https://cloud.githubusercontent.com/assets/19504324/15778745/78f8eafc-29db-11e6-8b56-8aef00872712.png)
 
 Figure 4 Control Algorithm of Solar Generation Logger
-
 
 ###Appendix E Complete Code of Software Design
 
