@@ -1,1 +1,1 @@
-It includes an Arduino code file and a javascript code file. The former can log data to SD card, LCD, BLUETOOTH and Serail Port while the latter helps to transmit data from Serial Port to plotly dashboard via mac terminal.
+It includes an Arduino complete code file and a javascript code file. The former can log data to SD card, LCD, BLUETOOTH and Serail Port while the latter helps to transmit data from Serial Port to plotly dashboard via mac terminal.
