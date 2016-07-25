@@ -25,15 +25,6 @@ For visualized data on dashboard, IoT (Internet of Things) technique is used for
 
 The complete code can be found on the link given in Appendix E. There are two folders on Git Hub. One includes a structured Arduino code file with a server file written in JavaScript, another includes files written in object oriented structure as reusable Arduino libraries with examples of solar power logger for SD card and LCD only. 
 
-###Implementation & Debugging
-
-During the implementation, there are some problems encountered but solved by specific approaches as follows:
-
-1.	Read analog value of solar panel voltage: Initially, the voltage read from solar panel was always the maximum voltage 3.3V. That is because the real voltage of panel is higher than 3.3V. So a 5Kohm potentiometer is used to reduce the input voltage lower than 3.3V. Also, the V- pin of panel was not connected to the ground, which resulted in unstable readings from the analog pin. After debugging, the solar panel could work as expected.
-2.	SD card connection to Arduino DUE: Initially, without the knowledge of SPI protocol, the pins of SD card were all connected to digital pins of DUE. But according to the datasheet of DUE, there is a ICSP header for SPI connection. After debugging, SD card worked.
-3.	Trouble in writing interrupt handler: Initially, the interrupt flag was not initialized and switched in the main loop. That is why the program failed to go back to the main loop after executing the interrupt handler. After that, the debouncing filter setting was also added to make sure the quick response of LCD to the pushbutton falling edge.
-4.	Problems with server.js: Sometimes ‘Serial Port Busy’ error popped up when trying to run this file. The solution is to add some scrolling texts in setup() for LCD, during which the Serial Port is released and accessible for server.js. After scrolling texts, the data can be transmitted to terminal and plotly dashboard. Also note that when trying to see the data stream on terminal, the serial port window should be closed. Otherwise, this kind of error will appear again.
-
 ###Conclusion
 
 To summarize, the system design can not only realize the basic function of logging solar power generation onto different devices, including SD card, LCD, Android phone (via Bluetooth), but an interrupt-driven LCD display and light sensor for warning checking are also featured. Furthermore, the mac is used as the server side to transmit real-time data stream from Serial Port to Plot.ly dashboard via a JavaScript written server.
